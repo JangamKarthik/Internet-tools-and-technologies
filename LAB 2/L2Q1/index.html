@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L2Q1</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .department-link {
+            position: absolute;
+            cursor: pointer;
+            border: 1px solid #fff;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .department-link:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <div style="position: relative;">
+        <img src="MAHE.jpg" usemap="#departmentMap" alt="Institute Map">
+        <map name="departmentMap">
+            <area shape="rect" coords="50,50,150,150" alt="Department 1" href="department1.html">
+            <area shape="rect" coords="200,100,300,200" alt="Department 2" href="department2.html">
+        </map>
+        <a href="index.html" class="department-link" style="top: 10px; left: 10px;">Back to Main Page</a>
+    </div>
+
+</body>
+</html>

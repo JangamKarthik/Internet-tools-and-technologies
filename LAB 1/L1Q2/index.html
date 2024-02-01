@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L1Q2</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: aliceblue;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Campus Visit Feedback Form</h1>
+
+    <form action="#" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <br>
+        <label>What did you like most about the campus?</label>
+
+        <br>
+        <label for="liked_students">Students</label>
+        <input type="checkbox" id="liked_students" name="liked[]" value="students">
+
+        <label for="liked_location">Location</label>
+        <input type="checkbox" id="liked_location" name="liked[]" value="location">
+
+        <label for="liked_campus">Campus</label>
+        <input type="checkbox" id="liked_campus" name="liked[]" value="campus">
+
+
+        <label for="liked_atmosphere">Atmosphere</label>
+        <input type="checkbox" id="liked_atmosphere" name="liked[]" value="atmosphere">
+
+        <label for="liked_dorms">Dorm Rooms</label>
+        <input type="checkbox" id="liked_dorms" name="liked[]" value="dorms">
+
+        
+        <label for="liked_sports">Sports</label>
+        <input type="checkbox" id="liked_sports" name="liked[]" value="sports">
+
+        <label>How did you become interested in the university?</label>
+        <input type="radio" id="interest_friends" name="interest" value="friends" required>
+        <label for="interest_friends">Friends</label>
+
+        <label for="interest_tv">Television</label>
+        <input type="radio" id="interest_tv" name="interest" value="television">
+
+        <label for="interest_internet">Internet</label>
+        <input type="radio" id="interest_internet" name="interest" value="Internet">
+
+        <label for="interest_other">Other</label>
+        <input type="radio" id="interest_other" name="interest" value="other">
+
+        <textarea id="comments" name="comments"></textarea>
+        <label for="comments">Additional Comments:</label>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>

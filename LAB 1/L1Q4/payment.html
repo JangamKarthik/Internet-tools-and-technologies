@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-dark.css">
+    <title>Book Store - Payment</title>
+</head>
+<body>
+
+    <header>
+        <h1>Payment</h1>
+        <nav>
+            <ul>
+                <li><a href="cart.html">Back to Cart</a></li>
+                <li><a href="order-confirmation.html">Complete Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <h2>Enter Payment Details</h2>
+        <form action="order-confirmation.html">
+            <!-- Payment form fields go here -->
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+
+            <label for="expirationDate">Expiration Date:</label>
+            <input type="text" id="expirationDate" name="expirationDate" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <input type="submit" value="Submit Payment">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Book Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #d85353;
+    margin: 20px;
+}
+
+.internal-link, .external-link {
+    display: inline-block;
+    font-size: 35px; 
+    text-decoration: none;
+    color: #0f0e0e;
+}
+
+.internal-link:hover {
+    background-color: #2ecc71;
+}
+
+.external-link:hover {
+    background-color: #e74c3c;
+}
+
+.internal-link {
+    background-color: #3498db;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px; 
+    margin-bottom: 20px; 
+}

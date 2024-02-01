@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-dark.css">
+    <title>Book Store - Books Catalog</title>
+</head>
+<body>
+
+    <header>
+        <h1>Books Catalog</h1>
+        <nav>
+            <ul>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <h2>Explore Our Collection</h2>
+        <div class="book">
+            <h3>I die my death why for you ?</h3>
+            <p>Author: Karthik</p>
+            <button onclick="addToCart('Book Title')">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Book Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart(bookTitle) {
+            alert(bookTitle + ' added to the shopping cart.');
+        }
+    </script>
+
+</body>
+</html>

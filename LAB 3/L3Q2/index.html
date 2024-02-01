@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L3Q2</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <h1>Pig Latin Converter</h1>
+    <form>
+        <label for="inputSentence">Enter English Sentence:</label>
+        <input type="text" id="inputSentence" />
+        <button type="button" onclick="convertToPigLatin()">Convert to Pig Latin</button>
+        <button type="button" onclick="clearConvertedText()">Clear</button>
+    </form>
+
+    <h2>Converted Sentences:</h2>
+    <textarea id="outputTextArea" rows="5" cols="50" readonly></textarea>
+</body>
+</html>

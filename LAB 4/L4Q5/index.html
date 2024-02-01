@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>L4Q5</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display" placeholder="0" readonly/>
+        <div class="button-row">
+            <button class="operation" onclick="clearDisplay()">C</button>
+            <button class="operation" onclick="backspace()">&#9003;</button>
+            <button class="operation" onclick="operate('/')">&#247;</button>
+            <button class="operation" onclick="operate('*')">&#215;</button>
+        </div>
+        <div class="button-row">
+            <button onclick="appendNumber(7)">7</button>
+            <button onclick="appendNumber(8)">8</button>
+            <button onclick="appendNumber(9)">9</button>
+            <button class="operation" onclick="operate('-')">&#8722;</button>
+        </div>
+        <div class="button-row">
+            <button onclick="appendNumber(4)">4</button>
+            <button onclick="appendNumber(5)">5</button>
+            <button onclick="appendNumber(6)">6</button>
+            <button class="operation" onclick="operate('+')">&#43;</button>
+        </div>
+        <div class="button-row">
+            <button onclick="appendNumber(1)">1</button>
+            <button onclick="appendNumber(2)">2</button>
+            <button onclick="appendNumber(3)">3</button>
+            <button class="operation" onclick="calculate()">=</button>
+        </div>
+        <div class="button-row">
+            <button class="zero" onclick="appendNumber(0)">0</button>
+            <button onclick="appendDecimal()">.</button>
+        </div>
+    </div>
+</body>
+</html>

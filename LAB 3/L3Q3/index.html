@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L3Q3</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <h1>Phone Number Extractor</h1>
+    <form>
+        <label for="phoneNumberInput">Enter Phone Number:</label>
+        <input type="text" id="phoneNumberInput" />
+
+        <button type="button" onclick="extractPhoneNumber()">Extract</button>
+        <button type="button" onclick="clearInputAndOutput()">Clear</button>
+
+        <h2>Extracted Information:</h2>
+        <label for="areaCodeOutput">Area Code:</label>
+        <input type="text" id="areaCodeOutput" readonly />
+
+        <label for="phoneNumberOutput">Phone Number:</label>
+        <input type="text" id="phoneNumberOutput" readonly />
+    </form>
+</body>
+</html>

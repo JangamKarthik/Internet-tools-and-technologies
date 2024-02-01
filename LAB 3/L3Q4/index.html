@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L3Q4</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <h1>Three-Letter Words Generator</h1>
+    <form>
+        <label for="fiveLetterWordInput">Enter a Five-Letter Word:</label>
+        <input type="text" id="fiveLetterWordInput" />
+        <button type="button" onclick="generateThreeLetterWords()">Generate</button>
+        <button type="button" onclick="clearInputAndOutput()">Clear</button>
+
+        <h2>Generated Three-Letter Words:</h2>
+        <textarea id="outputTextArea" rows="5" cols="20" readonly></textarea>
+    </form>
+</body>
+</html>
