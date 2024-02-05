@@ -1,24 +1,28 @@
-function generateFibonacci(n) {
-    var fibSeries = [];
-    for (var i = 0; i < n; i++) {
-        fibSeries.push(fibonacci(i));
+function fib(n) {
+    var a = [0, 1];
+    var str = "0, 1, ";
+    for (var i = 2; i < n; i++) {
+        a.push(a[i - 1] + a[i - 2]);
+        str += a[i].toString() + ", ";
     }
-    document.body.innerHTML += "<h2>Fibonacci Series (First " + n + " Numbers)</h2>";
-    document.body.innerHTML += "Fibonacci Series: " + fibSeries.join(", ") + "<br/><br/>";
+    document.getElementById("display").textContent = "Fibonacci Sequence: " + str;
 }
 
-function fibonacci(num) {
-    if (num <= 1) return num;
-    return fibonacci(num - 1) + fibonacci(num - 2);
-}
-
-function generateTableOfSquares(n) {
-    var tableContent = "<h2>Table of Numbers and Their Squares (1 to " + n + ")</h2>";
-    tableContent += "<table border='1'>";
-    tableContent += "<tr><th>Number</th><th>Square</th></tr>";
+function sq(n) {
+    var str = "Number    Square\n";
     for (var i = 1; i <= n; i++) {
-        tableContent += "<tr><td>" + i + "</td><td>" + (i * i) + "</td></tr>";
+        var squares = i * i;
+        str += i.toString() + "              " + squares.toString() + "\n";
     }
-    tableContent += "</table>";
-    document.body.innerHTML += tableContent;
+    document.getElementById("display").textContent = "Square Table:\n" + str;
+}
+
+function table() {
+    var value = prompt("Enter n", "5");
+    sq(Number(value));
+}
+
+function fibonacci() {
+    var value = prompt("Enter n", "5");
+    fib(Number(value));
 }
