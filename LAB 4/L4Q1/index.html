@@ -1,21 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L4Q1</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
-    <script type="text/javascript" src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+        #display {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #4285f4;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>Fibonacci and Squares</h1>
+    <h1>Fibonacci and Square Table</h1>
+    <button onclick="fibonacci();">Generate Fibonacci Sequence</button>
+    <button onclick="table();">Generate Square Table</button>
 
-    <script type="text/javascript">
-        var n1 = prompt("Enter a number (n) for Fibonacci series:");
-        generateFibonacci(n1);
-
-        var n2 = prompt("Enter a number (n) for the table of squares:");
-        generateTableOfSquares(n2);
-    </script>
+    <br>
+    <br>
+    <div id="display"></div>
 </body>
 </html>
