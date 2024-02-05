@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
     <title>L4Q3</title>
-    <style type="text/css">
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .paragraph {
-            position: absolute;
-            width: 200px;
-            padding: 10px;
-            background-color: #3498db;
-            color: #ecf0f1; 
-            cursor: pointer;
-        }
-    </style>
-    <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
-    <div class="paragraph" id="paragraph1" onmouseover="riseToTop('paragraph1')">Paragraph 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-    <div class="paragraph" id="paragraph2" onmouseover="riseToTop('paragraph2')">Paragraph 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-    <div class="paragraph" id="paragraph3" onmouseover="riseToTop('paragraph3')">Paragraph 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+    <div>
+        <div id="c1" class="box box1" onmouseover="bringToTop(this);" onmouseout="resetPosition(this)">
+            FIRST BOX
+        </div>
+        <div id="c2" class="box box2" onmouseover="bringToTop(this);" onmouseout="resetPosition(this)">
+            SECOND BOX
+        </div>
+        <div id="c3" class="box box3" onmouseover="bringToTop(this);" onmouseout="resetPosition(this)">
+            THIRD BOX
+        </div>
+    </div>
 </body>
 </html>
