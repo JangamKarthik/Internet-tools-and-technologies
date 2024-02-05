@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    line-height: 200px;
+    position: relative;
+    margin: auto;
+    border: 2px solid #272525;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, z-index 0.1s linear;
+}
+
+#c1{
+    color: black;
+    background-color: antiquewhite;
+}
+
+#c2{
+    color: bisque;
+    background-color: brown;
+}
+
+#c3{
+    color: blue;
+    background-color: aqua;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
