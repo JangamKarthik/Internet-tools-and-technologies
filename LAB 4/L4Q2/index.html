@@ -1,21 +1,52 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L4Q2</title>
-    <script type="text/javascript" src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>String and Number Functions</h1>
+    <h1>Left Most Vowel and Reverse</h1>
+    <input type="text" id="input">
+    <br><br>
+    <button onclick="leftvowel();">Find Left Most Vowel</button>
+    <br>
+    <br>
+    <button onclick="reverse();">Reverse</button>
 
-    <script type="text/javascript">
-        var inputString = prompt("Enter a string:");
-        var vowelPosition = findLeftMostVowelPosition(inputString);
-        document.write("<p>Left-most vowel in the string '" + inputString + "' is at position: " + vowelPosition + "</p>");
-        var inputNumber = prompt("Enter a number:");
-        var reversedNumber = reverseNumberDigits(inputNumber);
-        document.write("<p>Number with its digits in reverse order: " + reversedNumber + "</p>");
-    </script>
+    <br>
+    <br>
+    <div id="output"></div>
 </body>
 </html>
