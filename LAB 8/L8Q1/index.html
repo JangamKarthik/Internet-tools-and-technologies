@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Inventory Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Medical Inventory Management System</h1>
+    <div id="inventory-list"></div>
+    <form id="inventory-form">
+      <input type="text" id="item-name" placeholder="Item Name" required>
+      <input type="number" id="item-quantity" placeholder="Quantity" required>
+      <button type="submit">Add Item</button>
+    </form>
+    <button id="display-inventory">Display Entire Inventory</button>
+  </div>
+
+  <div id="inventory-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="inventory-details"></div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
